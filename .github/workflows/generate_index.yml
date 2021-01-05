@@ -55,7 +55,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITBLOG }}
           commit-message: "Refresh index AND BACK UP"
-          files: index BACKUP/
+          files: index.html BACKUP/
           rebase: 'true'
           name: ${{ env.GITHUB_NAME }}
           email: ${{ env.GITHUB_EMAIL }}
