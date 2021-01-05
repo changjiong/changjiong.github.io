@@ -50,7 +50,7 @@ jobs:
           source venv/bin/activate
           python main.py ${{ secrets.GITBLOG }} ${{ github.repository }} --issue_numbe '${{ github.event.issue.number }}'
       - name: Markdown-HTML
-	uses: ZacJW/markdown-html-action@1.1.0
+        uses: ZacJW/markdown-html-action@1.1.0
         with:
           input_files: '[["index.md"]]'
           output_files: '["index.html"]'
