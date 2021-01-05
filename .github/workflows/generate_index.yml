@@ -49,7 +49,11 @@ jobs:
         run: |
           source venv/bin/activate
           python main.py ${{ secrets.GITBLOG }} ${{ github.repository }} --issue_numbe '${{ github.event.issue.number }}'
-        
+      - name: Markdown to HTML
+         uses: lifepal/markdown-to-html@v1.2
+         with:
+           text: index.md
+
       - name: Push index 
         uses: github-actions-x/commit@v2.6
         with:
