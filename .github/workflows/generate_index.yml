@@ -1,4 +1,4 @@
-name: Generate GitBlog index
+name: Generate GitBlog Index
 
 on:
   workflow_dispatch:
