@@ -13,9 +13,9 @@ My personal blog using issues and GitHub Actions
 ## Todo
 - [测试一下todo-list](https://github.com/drunkwretch/drunkwretch.github.io/issues/5)--2021-01-07
 ## TODO
-TODO list from [测试一下todo-list](https://github.com/drunkwretch/drunkwretch.github.io/issues/5)--4 jobs to do--0 jobs done
-- [ ] 买菜
-- [ ] 洗菜
+TODO list from [测试一下todo-list](https://github.com/drunkwretch/drunkwretch.github.io/issues/5)--2 jobs to do--2 jobs done
+- [x] 买菜
+- [x] 洗菜
 - [ ] 做菜
 - [ ] 上菜
 
