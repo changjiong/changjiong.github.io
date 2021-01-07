@@ -52,7 +52,7 @@ jobs:
       - name: Markdown-HTML
         uses: ZacJW/markdown-html-action@1.1.0
         with:
-          input_files: '[["index.md"]]'
+          input_files: '[["README.md"]]'
           output_files: '["index.html"]'
           builtin_stylesheet: 'style.css'
           packages: 'pymdown-extensions'
@@ -63,7 +63,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITBLOG }}
           commit-message: "Refresh index AND BACK UP"
-          files: index.md index.html BACKUP/
+          files: README.md index.html BACKUP/
           rebase: 'true'
           name: ${{ env.GITHUB_NAME }}
           email: ${{ env.GITHUB_EMAIL }}
