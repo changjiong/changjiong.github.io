@@ -66,9 +66,11 @@ def get_issues_from_label(repo, label):
 
 def add_issue_info(issue, md):
     created_time = format_time(issue.created_at)
-    if issue.edited_at:
-        lastedited_time = format_time(issue.created_at)
-        md.write(f"- [{issue.title}]({issue.html_url})--{created_time}(最后更新{lastedited_time})\n")
+    if issue.updated_at:
+        updated_time = format_time(issue.updated_at)
+        md.write(
+            f"- [{issue.title}]({issue.html_url})--{created_time}(最后更新{updated_time})\n"
+        )
     else:
         md.write(f"- [{issue.title}]({issue.html_url})--{created_time}\n")
 
@@ -192,6 +194,8 @@ def main(token, repo_name, issue_number=None, dir_name=BACKUP_DIR):
     # add to readme one by one, change order here
     for func in [add_md_top, add_md_recent, add_md_label, add_md_todo]:
         func(repo, "README.md", me)
+
+    add_md_tail("README.md")
 
     to_generate_issues = get_to_generate_issues(repo, dir_name, issue_number)
 
