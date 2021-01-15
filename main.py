@@ -70,7 +70,7 @@ def add_issue_info(issue, md):
 
 def add_issue_indetail_info(issue, md):
     time = format_time(issue.created_at)
-    md.write(f'<li><a href="{issue.html_url}">{issue.title}</a>–{time}</li>\n')
+    md.write(f'<li><a href="{issue.html_url}">{issue.title}</a>--{time}</li>\n')
 
 
 def add_md_todo(repo, md, me):
