@@ -7,12 +7,12 @@ from github import Github
 MD_HEAD = """## Gitblog
 My personal blog using issues and GitHub Actions
 """
-NEWLINE = '\n'
+NEWLINE = "\n"
 BACKUP_DIR = "BACKUP"
 ANCHOR_NUMBER = 5
 TOP_ISSUES_LABELS = ["Top"]
 TODO_ISSUES_LABELS = ["TODO"]
-CSS = '''<link rel="stylesheet" href="./style.css" />'''
+CSS = """<link rel="stylesheet" href="./style.css" />"""
 
 
 def get_me(user):
@@ -65,8 +65,12 @@ def get_issues_from_label(repo, label):
 
 
 def add_issue_info(issue, md):
-    time = format_time(issue.created_at)
-    md.write(f"- [{issue.title}]({issue.html_url})--{time}\n")
+    created_time = format_time(issue.created_at)
+    if issue.edited_at:
+        lastedited_time = format_time(issue.created_at)
+        md.write(f"- [{issue.title}]({issue.html_url})--{created_time}(最后更新{lastedited_time})\n")
+    else:
+        md.write(f"- [{issue.title}]({issue.html_url})--{created_time}\n")
 
 
 def add_issue_indetail_info(issue, md):
@@ -122,11 +126,11 @@ def add_md_header(md):
         md.write(NEWLINE)
 
 
-
 def add_md_tail(md):
     with open(md, "w", encoding="utf-8") as md:
         md.write(CSS)
         md.write(NEWLINE)
+
 
 def add_md_label(repo, md, me):
     labels = get_repo_labels(repo)
@@ -157,7 +161,7 @@ def add_md_label(repo, md, me):
                         md.write("<ul>\n")
                         add_issue_indetail_info(issue, md)
                     else:
-                        add_issue_indetail_info(issue, md)                        
+                        add_issue_indetail_info(issue, md)
                     i += 1
             if i > ANCHOR_NUMBER:
                 md.write("</ul>\n")
