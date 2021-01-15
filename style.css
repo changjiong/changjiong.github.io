@@ -1,3 +1,7 @@
 h1:after {
     content: "Gao Jong";
   }
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
