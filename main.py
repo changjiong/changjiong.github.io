@@ -67,6 +67,10 @@ def add_issue_info(issue, md):
     time = format_time(issue.created_at)
     md.write(f"- [{issue.title}]({issue.html_url})--{time}\n")
 
+def add_issue_indetail_info(issue, md):
+    time = format_time(issue.created_at)
+    md.write(f"<li><a href=\"{issue.html_url}\">{issue.title}</a>–{time}</li>\n")
+
 
 def add_md_todo(repo, md, me):
     todo_issues = list(get_todo_issues(repo))
@@ -138,7 +142,7 @@ def add_md_label(repo, md, me):
                     if i == ANCHOR_NUMBER:
                         md.write("<details><summary>显示更多</summary>\n")
                         md.write("\n")
-                    add_issue_info(issue, md)
+                    add_issue_indetail_info(issue, md)
                     i += 1
             if i > ANCHOR_NUMBER:
                 md.write("</details>\n")
