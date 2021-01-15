@@ -66,8 +66,8 @@ def get_issues_from_label(repo, label):
 
 def add_issue_info(issue, md):
     created_time = format_time(issue.created_at)
-    if issue.updated_at:
-        updated_time = format_time(issue.updated_at)
+    updated_time = format_time(issue.updated_at)
+    if updated_time > created_time:        
         md.write(
             f"- [{issue.title}]({issue.html_url})--{created_time}(最后更新{updated_time})\n"
         )
