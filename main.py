@@ -129,7 +129,7 @@ def add_md_header(md):
 
 
 def add_md_tail(md):
-    with open(md, "w", encoding="utf-8") as md:
+    with open(md, "a+", encoding="utf-8") as md:
         md.write(CSS)
         md.write(NEWLINE)
 
