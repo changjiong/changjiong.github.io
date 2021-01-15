@@ -19,5 +19,7 @@ h1 a {
   height: 0;
 }
 h1:after {
+  display: none;
   content: "Gao Jong";
 }
+
