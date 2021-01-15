@@ -67,9 +67,10 @@ def add_issue_info(issue, md):
     time = format_time(issue.created_at)
     md.write(f"- [{issue.title}]({issue.html_url})--{time}\n")
 
+
 def add_issue_indetail_info(issue, md):
     time = format_time(issue.created_at)
-    md.write(f"<li><a href=\"{issue.html_url}\">{issue.title}</a>–{time}</li>\n")
+    md.write(f'<li><a href="{issue.html_url}">{issue.title}</a>–{time}</li>\n')
 
 
 def add_md_todo(repo, md, me):
@@ -139,10 +140,14 @@ def add_md_label(repo, md, me):
                 if not issue:
                     continue
                 if isMe(issue, me):
-                    if i == ANCHOR_NUMBER:
+                    if i < ANCHOR_NUMBER:
+                        add_issue_info(issue, md)
+                    elif i == ANCHOR_NUMBER:
                         md.write("<details><summary>显示更多</summary>\n")
                         md.write("\n")
-                    add_issue_indetail_info(issue, md)
+                        add_issue_indetail_info(issue, md)
+                    else:
+                        add_issue_indetail_info(issue, md)                        
                     i += 1
             if i > ANCHOR_NUMBER:
                 md.write("</details>\n")
@@ -200,6 +205,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("github_token", help="github_token")
     parser.add_argument("repo_name", help="repo_name")
-    parser.add_argument("--issue_number", help="issue_number", default=None, required=False)
+    parser.add_argument(
+        "--issue_number", help="issue_number", default=None, required=False
+    )
     options = parser.parse_args()
     main(options.github_token, options.repo_name, options.issue_number)
