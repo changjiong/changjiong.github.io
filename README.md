@@ -29,5 +29,5 @@ TODO list from [测试一下todo-list](https://github.com/drunkwretch/drunkwretc
 - [ ] 上菜
 
 <style>
-  @import url('./styles.css');
+  @import url('./style.css');
 </style>
