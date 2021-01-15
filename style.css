@@ -1,7 +1,23 @@
-h1:after {
-    content: "Gao Jong";
-  }
+body {
+  background: #333;
+  color: #fff;
+}
+a {
+  color: #fff;
+}
+a:hover {
+  color: #aaa;
+}
+h1,
+h2 {
+  border-bottom: 1px solid #444 !important;
+}
 
-*, ::after, ::before {
-    box-sizing: border-box;
+h1 a {
+  text-indent: -10000px;
+  display: block;
+  height: 0;
+}
+h1:after {
+  content: "Gao Jong";
 }
