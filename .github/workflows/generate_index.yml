@@ -49,14 +49,6 @@ jobs:
         run: |
           source venv/bin/activate
           python main.py ${{ secrets.GITBLOG }} ${{ github.repository }} --issue_numbe '${{ github.event.issue.number }}'
-      - name: Markdown-HTML
-        uses: ZacJW/markdown-html-action@1.1.0
-        with:
-          input_files: '[["README.md"]]'
-          output_files: '["index.html"]'
-          builtin_stylesheet: 'style.css'
-          packages: 'pymdown-extensions'
-          extensions: '["pymdownx.extra"]'
 
       - name: Push index 
         uses: github-actions-x/commit@v2.6
