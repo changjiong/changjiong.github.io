@@ -7,7 +7,7 @@ from github import Github
 MD_HEAD = """## Gitblog
 My personal blog using issues and GitHub Actions
 """
-
+NEWLINE = '\n'
 BACKUP_DIR = "BACKUP"
 ANCHOR_NUMBER = 5
 TOP_ISSUES_LABELS = ["Top"]
@@ -98,6 +98,7 @@ def add_md_top(repo, md, me):
         for issue in top_issues:
             if isMe(issue, me):
                 add_issue_info(issue, md)
+        md.write(NEWLINE)
 
 
 def add_md_recent(repo, md, me):
@@ -109,6 +110,7 @@ def add_md_recent(repo, md, me):
             for issue in new_five_issues:
                 if isMe(issue, me):
                     add_issue_info(issue, md)
+            md.write(NEWLINE)
         except:
             return
 
@@ -116,6 +118,7 @@ def add_md_recent(repo, md, me):
 def add_md_header(md):
     with open(md, "w", encoding="utf-8") as md:
         md.write(MD_HEAD)
+        md.write(NEWLINE)
 
 
 def add_md_label(repo, md, me):
