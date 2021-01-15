@@ -12,6 +12,7 @@ BACKUP_DIR = "BACKUP"
 ANCHOR_NUMBER = 5
 TOP_ISSUES_LABELS = ["Top"]
 TODO_ISSUES_LABELS = ["TODO"]
+CSS = '''<link rel="stylesheet" href="./style.css" />'''
 
 
 def get_me(user):
@@ -120,6 +121,12 @@ def add_md_header(md):
         md.write(MD_HEAD)
         md.write(NEWLINE)
 
+
+
+def add_md_tail(md):
+    with open(md, "w", encoding="utf-8") as md:
+        md.write(CSS)
+        md.write(NEWLINE)
 
 def add_md_label(repo, md, me):
     labels = get_repo_labels(repo)
