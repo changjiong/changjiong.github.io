@@ -5,11 +5,11 @@ My personal blog using issues and GitHub Actions
 - [排序展示是依靠label的](https://github.com/drunkwretch/drunkwretch.github.io/issues/7)--2021-01-07(最后更新2021-05-07)
 
 ## 最近更新
+- [科技对人类生活的影响](https://github.com/drunkwretch/drunkwretch.github.io/issues/9)--2021-09-29
 - [things get done](https://github.com/drunkwretch/drunkwretch.github.io/issues/8)--2021-06-11
 - [排序展示是依靠label的](https://github.com/drunkwretch/drunkwretch.github.io/issues/7)--2021-01-07(最后更新2021-05-07)
 - [测试一下todo-list](https://github.com/drunkwretch/drunkwretch.github.io/issues/5)--2021-01-07
 - [手机写作测试](https://github.com/drunkwretch/drunkwretch.github.io/issues/4)--2021-01-07(最后更新2021-01-15)
-- [Stars Don’t Make Me Happy. Feedbacks Do.](https://github.com/drunkwretch/drunkwretch.github.io/issues/3)--2021-01-05(最后更新2021-01-15)
 
 ## 2021
 - [排序展示是依靠label的](https://github.com/drunkwretch/drunkwretch.github.io/issues/7)--2021-01-07(最后更新2021-05-07)
