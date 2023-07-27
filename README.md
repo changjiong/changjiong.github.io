@@ -1,8 +1,7 @@
 ## Gitblog
 My personal blog using issues and GitHub Actions (随意转载，无需署名)
 [RSS Feed](https://raw.githubusercontent.com/changjiong/changjiong.github.io/master/feed.xml)
-
-
+<style> h1 {display: none;} </style>
 ## 友情链接
 <table>
 <thead>
@@ -74,4 +73,3 @@ TODO list from [测试一下todo-list](https://github.com/changjiong/changjiong.
 - [ ] 做菜
 - [ ] 上菜
 
-<style> h1 {display: none;} </style>
