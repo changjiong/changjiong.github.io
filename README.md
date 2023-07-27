@@ -6,6 +6,7 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 ## 友情链接
 | Name | Link | Desc | 
 | ---- | ---- | ---- |
+| 兔子鮮笙 | https://tuzi.moe/ | 20 岁的天才少年 |
 ## 置顶文章
 - [排序展示是依靠label的](https://github.com/changjiong/changjiong.github.io/issues/7)--2021-01-07(最后更新2021-05-07)
 
