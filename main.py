@@ -177,6 +177,7 @@ def add_md_firends(repo, md, me):
     with open(md, "a+", encoding="utf-8") as md:
         md.write("## 友情链接\n")
         md.write(html)
+        md.write(NEWLINE)
 
 
 def add_md_recent(repo, md, me, limit=5):
