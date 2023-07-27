@@ -196,6 +196,7 @@ def add_md_header(md, repo_name):
     with open(md, "w", encoding="utf-8") as md:
         md.write(MD_HEAD.format(repo_name=repo_name))
         md.write(NEWLINE)
+        md.write(NEWLINE)
 
 
 def add_md_tail(md):
