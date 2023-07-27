@@ -203,7 +203,7 @@ def add_md_header(md, repo_name):
 
 def add_md_tail(md):
     with open(md, "a+", encoding="utf-8") as md:
-        md.write(CSS)
+        # md.write(CSS)
         md.write(NEWLINE)
 
 
