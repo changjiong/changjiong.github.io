@@ -4,21 +4,47 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 
 
 ## 友情链接
-
+<table>
+<thead>
 <tr>
-    <td>Name</td>
-    <td>Link</td>
-    <td>Desc</td>
+<th>Name</th>
+<th>Link</th>
+<th>Desc</th>
 </tr>
-
-
+</thead>
+<tbody>
 <tr>
-    <td>兔子鮮笙</td>
-    <td>https://tuzi.moe/</td>
-    <td>20 岁的天才少年</td>
+<td>兔子鮮笙</td>
+<td>https://tuzi.moe/</td>
+<td>20 岁的天才少年</td>
 </tr>
-
-## 置顶文章
+<tr>
+<td>daya0576</td>
+<td>https://changchen.me/</td>
+<td>喜欢 python 的大牙</td>
+</tr>
+<tr>
+<td>古思为</td>
+<td>https://siwei.io/</td>
+<td>I build things with magic and scale the magic to help people.</td>
+</tr>
+<tr>
+<td>Frost Ming</td>
+<td>https://frostming.com/</td>
+<td>醉后不知天在水，满船清梦压星河</td>
+</tr>
+<tr>
+<td>daya0576</td>
+<td>https://changchen.me/</td>
+<td>喜欢 python 的大牙</td>
+</tr>
+<tr>
+<td>二愣的闲谈杂鱼</td>
+<td>https://godruoyi.com/</td>
+<td>生活总是这样，不能让人处处都满意，但我们还要热情地生活下去。</td>
+</tr>
+</tbody>
+</table>## 置顶文章
 - [排序展示是依靠label的](https://github.com/changjiong/changjiong.github.io/issues/7)--2021-01-07(最后更新2021-05-07)
 
 ## 最近更新
