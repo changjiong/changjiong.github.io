@@ -31,7 +31,7 @@ FRIENDS_INFO_DICT = {
 }
 
 # CSS = """<link rel="stylesheet" href="./style.css" />"""
-CSS = """<style> h1 {display: none;} </style>"""
+CSS = """<head> <style> h1 {display: none;} </style> </head>"""
 
 
 def get_me(user):
@@ -199,7 +199,7 @@ def add_md_recent(repo, md, me, limit=5):
 def add_md_header(md, repo_name):
     with open(md, "w", encoding="utf-8") as md:
         md.write(MD_HEAD.format(repo_name=repo_name))
-        md.write("<style> h1 {display: none;} </style>\n")
+        md.write("<head><style> h1 {display: none;} </style></head>\n")
 
 
 def add_md_tail(md):
