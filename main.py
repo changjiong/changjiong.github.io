@@ -3,18 +3,17 @@ import argparse
 import os
 import re
 
+import markdown
 from marko.ext.gfm import gfm as marko
 from github import Github
 from feedgen.feed import FeedGenerator
 from lxml.etree import CDATA
-import markdown
 
 MD_HEAD = """## Gitblog
 My personal blog using issues and GitHub Actions (随意转载，无需署名)
 [RSS Feed](https://raw.githubusercontent.com/{repo_name}/master/feed.xml)
 """
 
-NEWLINE = "\n"
 BACKUP_DIR = "BACKUP"
 ANCHOR_NUMBER = 5
 TOP_ISSUES_LABELS = ["Top"]
@@ -22,16 +21,13 @@ TODO_ISSUES_LABELS = ["TODO"]
 FRIENDS_LABELS = ["Friends"]
 IGNORE_LABELS = FRIENDS_LABELS + TOP_ISSUES_LABELS + TODO_ISSUES_LABELS
 
-FRIENDS_TABLE_HEAD = "| Name | Link | Desc | \n| ---- | ---- | ---- |\n"
+FRIENDS_TABLE_HEAD = "| Name | Link | Desc | \n | ---- | ---- | ---- |\n"
 FRIENDS_TABLE_TEMPLATE = "| {name} | {link} | {desc} |\n"
 FRIENDS_INFO_DICT = {
     "名字": "",
     "链接": "",
     "描述": "",
 }
-
-# CSS = """<link rel="stylesheet" href="./style.css" />"""
-CSS = """<head> <style> h1 {display: none;} </style> </head>"""
 
 
 def get_me(user):
@@ -48,6 +44,7 @@ def is_hearted_by_me(comment, me):
         if r.content == "heart" and r.user.login == me:
             return True
     return False
+
 
 def _make_friend_table_string(s):
     info_dict = FRIENDS_INFO_DICT.copy()
@@ -67,6 +64,7 @@ def _make_friend_table_string(s):
         print(str(e))
         return
 
+
 # help to covert xml vaild string
 def _valid_xml_char_ordinal(c):
     codepoint = ord(c)
@@ -77,6 +75,7 @@ def _valid_xml_char_ordinal(c):
         or 0xE000 <= codepoint <= 0xFFFD
         or 0x10000 <= codepoint <= 0x10FFFF
     )
+
 
 def format_time(time):
     return str(time)[:10]
@@ -120,19 +119,8 @@ def get_issues_from_label(repo, label):
 
 
 def add_issue_info(issue, md):
-    created_time = format_time(issue.created_at)
-    updated_time = format_time(issue.updated_at)
-    if updated_time > created_time:        
-        md.write(
-            f"- [{issue.title}]({issue.html_url})--{created_time}(最后更新{updated_time})\n"
-        )
-    else:
-        md.write(f"- [{issue.title}]({issue.html_url})--{created_time}\n")
-
-
-def add_issue_indetail_info(issue, md):
     time = format_time(issue.created_at)
-    md.write(f'<li><a href="{issue.html_url}">{issue.title}</a>--{time}</li>\n')
+    md.write(f"- [{issue.title}]({issue.html_url})--{time}\n")
 
 
 def add_md_todo(repo, md, me):
@@ -144,11 +132,11 @@ def add_md_todo(repo, md, me):
         for issue in todo_issues:
             if is_me(issue, me):
                 todo_title, todo_list = parse_TODO(issue)
-                md.write("TODO list from " + todo_title + NEWLINE)
+                md.write("TODO list from " + todo_title + "\n")
                 for t in todo_list:
-                    md.write(t + NEWLINE)
+                    md.write(t + "\n")
                 # new line
-                md.write(NEWLINE)
+                md.write("\n")
 
 
 def add_md_top(repo, md, me):
@@ -160,7 +148,7 @@ def add_md_top(repo, md, me):
         for issue in top_issues:
             if is_me(issue, me):
                 add_issue_info(issue, md)
-        md.write(NEWLINE)
+
 
 def add_md_firends(repo, md, me):
     s = FRIENDS_TABLE_HEAD
@@ -173,7 +161,7 @@ def add_md_firends(repo, md, me):
                 except Exception as e:
                     print(str(e))
                     pass
-    s = markdown.markdown(s,output_format='html', extensions=['extra'])            
+    s = markdown.markdown(s,output_format='html', extensions=['extra']) 
     with open(md, "a+", encoding="utf-8") as md:
         md.write("## 友情链接\n")
         md.write(s)
@@ -199,13 +187,7 @@ def add_md_recent(repo, md, me, limit=5):
 def add_md_header(md, repo_name):
     with open(md, "w", encoding="utf-8") as md:
         md.write(MD_HEAD.format(repo_name=repo_name))
-        md.write("<head><style> h1 {display: none;} </style></head>\n")
-
-
-def add_md_tail(md):
-    with open(md, "a+", encoding="utf-8") as md:
-        md.write(CSS)
-        md.write(NEWLINE)
+        md.write("\n")
 
 
 def add_md_label(repo, md, me):
@@ -224,7 +206,7 @@ def add_md_label(repo, md, me):
 
             issues = get_issues_from_label(repo, label)
             if issues.totalCount:
-                md.write("## " + label.name + NEWLINE)
+                md.write("## " + label.name + "\n")
                 issues = sorted(issues, key=lambda x: x.created_at, reverse=True)
             i = 0
             for issue in issues:
@@ -233,14 +215,12 @@ def add_md_label(repo, md, me):
                 if is_me(issue, me):
                     if i == ANCHOR_NUMBER:
                         md.write("<details><summary>显示更多</summary>\n")
-                        md.write(NEWLINE)
+                        md.write("\n")
                     add_issue_info(issue, md)
                     i += 1
             if i > ANCHOR_NUMBER:
-                md.write("</details>")
-                md.write(NEWLINE)
-                md.write(NEWLINE)
-
+                md.write("</details>\n")
+                md.write("\n")
 
 
 def get_to_generate_issues(repo, dir_name, issue_number=None):
@@ -256,6 +236,7 @@ def get_to_generate_issues(repo, dir_name, issue_number=None):
     if issue_number:
         to_generate_issues.append(repo.get_issue(int(issue_number)))
     return to_generate_issues
+
 
 def generate_rss_feed(repo, filename, me):
     generator = FeedGenerator()
@@ -283,9 +264,27 @@ def generate_rss_feed(repo, filename, me):
         item.content(CDATA(marko.convert(body)), type="html")
     generator.atom_file(filename)
 
+
+def main(token, repo_name, issue_number=None, dir_name=BACKUP_DIR):
+    user = login(token)
+    me = get_me(user)
+    repo = get_repo(user, repo_name)
+    # add to readme one by one, change order here
+    add_md_header("README.md", repo_name)
+    for func in [add_md_firends, add_md_top, add_md_recent, add_md_label, add_md_todo]:
+        func(repo, "README.md", me)
+
+    generate_rss_feed(repo, "feed.xml", me)
+    to_generate_issues = get_to_generate_issues(repo, dir_name, issue_number)
+
+    # save md files to backup folder
+    for issue in to_generate_issues:
+        save_issue(issue, me, dir_name)
+
+
 def save_issue(issue, me, dir_name=BACKUP_DIR):
     md_name = os.path.join(
-        dir_name, f"{issue.number}_{issue.title.replace(' ', '.')}.md"
+        dir_name, f"{issue.number}_{issue.title.replace('/', '-').replace(' ', '.')}.md"
     )
     with open(md_name, "w") as f:
         f.write(f"# [{issue.title}]({issue.html_url})\n\n")
@@ -295,27 +294,6 @@ def save_issue(issue, me, dir_name=BACKUP_DIR):
                 if is_me(c, me):
                     f.write("\n\n---\n\n")
                     f.write(c.body)
-
-def main(token, repo_name, issue_number=None, dir_name=BACKUP_DIR):
-    user = login(token)
-    me = get_me(user)
-    repo = get_repo(user, repo_name)
-    add_md_header("README.md", repo_name)
-    # add to readme one by one, change order here
-    for func in  [add_md_firends, add_md_top, add_md_recent, add_md_label, add_md_todo]:
-        func(repo, "README.md", me)
-
-    generate_rss_feed(repo, "feed.xml", me)
-
-    # add_md_tail("README.md")
-
-    to_generate_issues = get_to_generate_issues(repo, dir_name, issue_number)
-
-    # save md files to backup folder
-    for issue in to_generate_issues:
-        save_issue(issue, me, dir_name)
-
-
 
 
 if __name__ == "__main__":
