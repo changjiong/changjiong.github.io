@@ -54,6 +54,8 @@ jobs:
         run: |
           git config --local user.email "${{ env.GITHUB_EMAIL }}"
           git config --local user.name "${{ env.GITHUB_NAME }}"
+          git add index.html
+          git add feed.xml
           git add BACKUP/*.md
           git commit -a -m 'update new blog' || echo "nothing to commit"
           git push || echo "nothing to push"
