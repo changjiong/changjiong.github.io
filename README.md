@@ -10,11 +10,11 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 - [排序展示是依靠label的](https://github.com/changjiong/changjiong.github.io/issues/7)--2021-01-07(最后更新2021-05-07)
 
 ## 最近更新
+- [友情链接](https://github.com/changjiong/changjiong.github.io/issues/10)--2023-07-27
 - [科技对人类生活的影响](https://github.com/changjiong/changjiong.github.io/issues/9)--2021-09-29
 - [things get done](https://github.com/changjiong/changjiong.github.io/issues/8)--2021-06-11
 - [排序展示是依靠label的](https://github.com/changjiong/changjiong.github.io/issues/7)--2021-01-07(最后更新2021-05-07)
 - [测试一下todo-list](https://github.com/changjiong/changjiong.github.io/issues/5)--2021-01-07
-- [手机写作测试](https://github.com/changjiong/changjiong.github.io/issues/4)--2021-01-07(最后更新2023-06-09)
 ## 2021
 - [科技对人类生活的影响](https://github.com/changjiong/changjiong.github.io/issues/9)--2021-09-29
 - [排序展示是依靠label的](https://github.com/changjiong/changjiong.github.io/issues/7)--2021-01-07(最后更新2021-05-07)
