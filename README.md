@@ -44,7 +44,8 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 <td>生活总是这样，不能让人处处都满意，但我们还要热情地生活下去。</td>
 </tr>
 </tbody>
-</table>## 置顶文章
+</table>
+## 置顶文章
 - [排序展示是依靠label的](https://github.com/changjiong/changjiong.github.io/issues/7)--2021-01-07(最后更新2021-05-07)
 
 ## 最近更新
