@@ -140,7 +140,7 @@ def add_md_todo(repo, md, me):
     with open(md, "a+", encoding="utf-8") as md:
         md.write("## TODO\n")
         for issue in todo_issues:
-            if isMe(issue, me):
+            if is_me(issue, me):
                 todo_title, todo_list = parse_TODO(issue)
                 md.write("TODO list from " + todo_title + NEWLINE)
                 for t in todo_list:
