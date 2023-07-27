@@ -30,7 +30,8 @@ FRIENDS_INFO_DICT = {
     "描述": "",
 }
 
-CSS = """<link rel="stylesheet" href="./style.css" />"""
+# CSS = """<link rel="stylesheet" href="./style.css" />"""
+CSS = """<style> h1 {display: none;} </style>"""
 
 
 def get_me(user):
@@ -203,7 +204,7 @@ def add_md_header(md, repo_name):
 
 def add_md_tail(md):
     with open(md, "a+", encoding="utf-8") as md:
-        # md.write(CSS)
+        md.write(CSS)
         md.write(NEWLINE)
 
 
