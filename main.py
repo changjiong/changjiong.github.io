@@ -150,6 +150,7 @@ def add_md_top(repo, md, me):
         for issue in top_issues:
             if is_me(issue, me):
                 add_issue_info(issue, md)
+        md.write("\n")
 
 
 def add_md_firends(repo, md, me):
@@ -182,6 +183,7 @@ def add_md_recent(repo, md, me, limit=5):
                     count += 1
                     if count >= limit:
                         break
+            md.write("\n")
         except:
             return
 
@@ -227,6 +229,7 @@ def add_md_label(repo, md, me):
             if i > ANCHOR_NUMBER:
                 md.write("</details>\n")
                 md.write("\n")
+        md.write("\n")
 
 
 def get_to_generate_issues(repo, dir_name, issue_number=None):
