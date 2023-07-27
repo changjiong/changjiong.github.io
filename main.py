@@ -173,11 +173,11 @@ def add_md_firends(repo, md, me):
                 except Exception as e:
                     print(str(e))
                     pass
-    html = markdown.markdown(s,output_format='html', extensions=['extra'])            
+    s = markdown.markdown(s,output_format='html', extensions=['extra'])            
     with open(md, "a+", encoding="utf-8") as md:
         md.write("## 友情链接\n")
-        md.write(html)
-        md.write(NEWLINE)
+        md.write(s)
+        md.write("\n\n")
 
 
 def add_md_recent(repo, md, me, limit=5):
@@ -199,8 +199,7 @@ def add_md_recent(repo, md, me, limit=5):
 def add_md_header(md, repo_name):
     with open(md, "w", encoding="utf-8") as md:
         md.write(MD_HEAD.format(repo_name=repo_name))
-        md.write(NEWLINE)
-        md.write(NEWLINE)
+        md.write("<style> h1 {display: none;} </style>\n")
 
 
 def add_md_tail(md):
@@ -308,7 +307,7 @@ def main(token, repo_name, issue_number=None, dir_name=BACKUP_DIR):
 
     generate_rss_feed(repo, "feed.xml", me)
 
-    add_md_tail("README.md")
+    # add_md_tail("README.md")
 
     to_generate_issues = get_to_generate_issues(repo, dir_name, issue_number)
 

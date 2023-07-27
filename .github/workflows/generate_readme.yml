@@ -13,7 +13,7 @@ on:
       - main.py
 
 env:
-  GITHUB_NAME: drunkwretch 
+  GITHUB_NAME: changjiong 
   GITHUB_EMAIL: drunkwretch@gmail.com
 
 jobs:
