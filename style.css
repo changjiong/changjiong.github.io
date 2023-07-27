@@ -270,8 +270,6 @@ a:target {
 
 table {
 	text-align: left;
-	border-bottom-style: solid;
-	border-bottom-color: rgb(211, 202, 221);
 }
 th {
 	background: rgb(223, 216, 232);
