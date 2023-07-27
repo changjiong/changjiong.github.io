@@ -1,7 +1,7 @@
 ## Gitblog
 My personal blog using issues and GitHub Actions (随意转载，无需署名)
 [RSS Feed](https://raw.githubusercontent.com/changjiong/changjiong.github.io/master/feed.xml)
-<style> h1 {display: none;} </style>
+<head><style> h1 {display: none;} </style></head>
 ## 友情链接
 <table>
 <thead>
