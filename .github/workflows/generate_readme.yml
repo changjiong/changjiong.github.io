@@ -13,8 +13,8 @@ on:
       - main.py
 
 env:
-  GITHUB_NAME: changjiong 
-  GITHUB_EMAIL: drunkwretch@gmail.com
+  GITHUB_NAME: "GitHub Action" 
+  GITHUB_EMAIL: "action@github.com"
 
 jobs:
   sync:
@@ -24,19 +24,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Python
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v4
         with:
           python-version: 3.11
-
-      - name: Configure pip cache
-        uses: actions/cache@v1
-        id: pip-cache
-        with:
-          path: venv
-          key: pip-1-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            pip-
-
+          cache: pip
+          cache-dependency-path: "requirements.txt"
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
