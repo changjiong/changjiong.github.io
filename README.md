@@ -1,3 +1,14 @@
+
+<head>
+	<script type="text/javascript">
+		(function(c,l,a,r,i,t,y){
+			c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+			t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+			y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+		})(window, document, "clarity", "script", "jtdrkyns3w");
+	</script>
+</head>
+
 ## Gitblog
 My personal blog using issues and GitHub Actions (随意转载，无需署名)
 [RSS Feed](https://raw.githubusercontent.com/changjiong/changjiong.github.io/master/feed.xml)
@@ -17,11 +28,11 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 - [排序展示是依靠label的](https://github.com/changjiong/changjiong.github.io/issues/7)--2021-01-07
 
 ## 最近更新
+- [添加微软clarity支持](https://github.com/changjiong/changjiong.github.io/issues/11)--2023-11-20
 - [友情链接](https://github.com/changjiong/changjiong.github.io/issues/10)--2023-07-27
 - [科技对人类生活的影响](https://github.com/changjiong/changjiong.github.io/issues/9)--2021-09-29
 - [things get done](https://github.com/changjiong/changjiong.github.io/issues/8)--2021-06-11
 - [排序展示是依靠label的](https://github.com/changjiong/changjiong.github.io/issues/7)--2021-01-07
-- [测试一下todo-list](https://github.com/changjiong/changjiong.github.io/issues/5)--2021-01-07
 
 ## 2021
 - [科技对人类生活的影响](https://github.com/changjiong/changjiong.github.io/issues/9)--2021-09-29
@@ -35,6 +46,8 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 - [利用github issue和githubpages写博客](https://github.com/changjiong/changjiong.github.io/issues/1)--2021-01-05
 </details>
 
+## 2023
+- [添加微软clarity支持](https://github.com/changjiong/changjiong.github.io/issues/11)--2023-11-20
 
 ## TODO
 TODO list from [测试一下todo-list](https://github.com/changjiong/changjiong.github.io/issues/5)--2 jobs to do--2 jobs done
