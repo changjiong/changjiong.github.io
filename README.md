@@ -28,11 +28,11 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 - [排序展示是依靠label的](https://github.com/changjiong/changjiong.github.io/issues/7)--2021-01-07
 
 ## 最近更新
+- [我常用的工具](https://github.com/changjiong/changjiong.github.io/issues/12)--2024-01-19
 - [添加微软clarity支持](https://github.com/changjiong/changjiong.github.io/issues/11)--2023-11-20
 - [友情链接](https://github.com/changjiong/changjiong.github.io/issues/10)--2023-07-27
 - [科技对人类生活的影响](https://github.com/changjiong/changjiong.github.io/issues/9)--2021-09-29
 - [things get done](https://github.com/changjiong/changjiong.github.io/issues/8)--2021-06-11
-- [排序展示是依靠label的](https://github.com/changjiong/changjiong.github.io/issues/7)--2021-01-07
 
 ## 2021
 - [科技对人类生活的影响](https://github.com/changjiong/changjiong.github.io/issues/9)--2021-09-29
@@ -48,6 +48,8 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 
 ## 2023
 - [添加微软clarity支持](https://github.com/changjiong/changjiong.github.io/issues/11)--2023-11-20
+## 2024
+- [我常用的工具](https://github.com/changjiong/changjiong.github.io/issues/12)--2024-01-19
 
 ## TODO
 TODO list from [测试一下todo-list](https://github.com/changjiong/changjiong.github.io/issues/5)--2 jobs to do--2 jobs done

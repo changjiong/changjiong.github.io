@@ -1,5 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/changjiong/changjiong.github.io</id><title>RSS feed of changjiong's changjiong.github.io</title><updated>2023-11-20T12:40:43.223794+00:00</updated><author><name>GitHub Action</name><email>action@github.com</email></author><link href="https://github.com/changjiong/changjiong.github.io"/><link href="https://raw.githubusercontent.com/changjiong/changjiong.github.io/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><entry><id>https://github.com/changjiong/changjiong.github.io/issues/11</id><title>添加微软clarity支持</title><updated>2023-11-20T12:40:43.480128+00:00</updated><content type="html"><![CDATA[<head>
+<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/changjiong/changjiong.github.io</id><title>RSS feed of changjiong's changjiong.github.io</title><updated>2024-01-19T08:51:59.943719+00:00</updated><author><name>GitHub Action</name><email>action@github.com</email></author><link href="https://github.com/changjiong/changjiong.github.io"/><link href="https://raw.githubusercontent.com/changjiong/changjiong.github.io/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator><entry><id>https://github.com/changjiong/changjiong.github.io/issues/12</id><title>我常用的工具</title><updated>2024-01-19T08:52:00.151658+00:00</updated><content type="html"><![CDATA[<p>常用语言：python
+代码： VS code、Notepad++
+数据库：navicat
+邮件： Foxmail
+网盘： Google Drive、阿里云盘 、OneDrive、百度云、夸克云盘
+翻墙： 风之谷+2台vps、clash
+图像： FSCapture（截图）
+视频： Potplayer、剪映
+文档： 飞书、typora
+笔记：logseq
+快速搜索： Everything
+浏览器： Microsoft Edge、比特浏览器
+虚拟机： Virtualbox
+思维导图： Xmind、ProcessOn
+粘贴板：ditto
+防火墙：火绒
+下载：idm</p>
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/12"/><category term="2024"/><published>2024-01-19T08:51:33+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/11</id><title>添加微软clarity支持</title><updated>2024-01-19T08:52:00.256370+00:00</updated><content type="html"><![CDATA[<head>
 	&lt;script type="text/javascript">
 		(function(c,l,a,r,i,t,y){
 			c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -7,7 +24,7 @@
 			y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 		})(window, document, "clarity", "script", "jtdrkyns3w");
 	</script>
-</head>]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/11" rel="alternate"/><category term="2023"/><published>2023-11-20T09:46:07+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/10</id><title>友情链接</title><updated>2023-11-20T12:40:43.579637+00:00</updated><content type="html"><![CDATA[<p>这个 Issue 是友情链接的 Issue, 如果你想加到友情链接里，请在这条 Issue 上评论，我打心后会自动加到友情链接里。感谢大家。</p>
+</head>]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/11"/><category term="2023"/><published>2023-11-20T09:46:07+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/10</id><title>友情链接</title><updated>2024-01-19T08:52:00.340945+00:00</updated><content type="html"><![CDATA[<p>这个 Issue 是友情链接的 Issue, 如果你想加到友情链接里，请在这条 Issue 上评论，我打心后会自动加到友情链接里。感谢大家。</p>
 <hr />
 <p>格式如下（请参考我下面的 comment）:
 冒号为中文冒号 ：</p>
@@ -17,23 +34,23 @@
 <ul>
 <li><input disabled="" type="checkbox"> added all</li>
 </ul>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/10" rel="alternate"/><category term="Friends"/><published>2023-07-27T04:46:18+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/9</id><title>科技对人类生活的影响</title><updated>2023-11-20T12:40:43.682432+00:00</updated><content type="html"><![CDATA[<p>暂时不太清楚Mark</p>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/9" rel="alternate"/><category term="2021"/><published>2021-09-29T12:01:39+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/8</id><title>things get done</title><updated>2023-11-20T12:40:43.804465+00:00</updated><content type="html"><![CDATA[<p>态度 气度  厚度</p>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/8" rel="alternate"/><published>2021-06-11T04:22:28+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/7</id><title>排序展示是依靠label的</title><updated>2023-11-20T12:40:43.922931+00:00</updated><content type="html"><![CDATA[<p>添加了top标签</p>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/7" rel="alternate"/><category term="2021"/><category term="Top"/><published>2021-01-07T06:51:02+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/5</id><title>测试一下todo-list</title><updated>2023-11-20T12:40:44.041031+00:00</updated><content type="html"><![CDATA[<ul>
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/10"/><category term="Friends"/><published>2023-07-27T04:46:18+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/9</id><title>科技对人类生活的影响</title><updated>2024-01-19T08:52:00.410573+00:00</updated><content type="html"><![CDATA[<p>暂时不太清楚Mark</p>
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/9"/><category term="2021"/><published>2021-09-29T12:01:39+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/8</id><title>things get done</title><updated>2024-01-19T08:52:00.497586+00:00</updated><content type="html"><![CDATA[<p>态度 气度  厚度</p>
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/8"/><published>2021-06-11T04:22:28+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/7</id><title>排序展示是依靠label的</title><updated>2024-01-19T08:52:00.579197+00:00</updated><content type="html"><![CDATA[<p>添加了top标签</p>
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/7"/><category term="2021"/><category term="Top"/><published>2021-01-07T06:51:02+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/5</id><title>测试一下todo-list</title><updated>2024-01-19T08:52:00.670028+00:00</updated><content type="html"><![CDATA[<ul>
 <li><input checked="" disabled="" type="checkbox"> 买菜</li>
 <li><input checked="" disabled="" type="checkbox"> 洗菜</li>
 <li><input disabled="" type="checkbox"> 做菜</li>
 <li><input disabled="" type="checkbox"> 上菜</li>
 </ul>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/5" rel="alternate"/><category term="2021"/><category term="TODO"/><published>2021-01-07T02:40:01+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/4</id><title>手机写作测试</title><updated>2023-11-20T12:40:44.156872+00:00</updated><content type="html"><![CDATA[<p>这是在手机客户端编写输入的，用手机输入法打字效率有点低，但是语音输入法感觉还行。不过口语无法替代书面语，这一点比较遗憾。</p>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/4" rel="alternate"/><category term="2021"/><published>2021-01-07T02:33:26+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/3</id><title>Stars Don’t Make Me Happy. Feedbacks Do.</title><updated>2023-11-20T12:40:44.255997+00:00</updated><content type="html"><![CDATA[<p>Like many other programmers, I used to get hyped when somebody stars my project on GitHub. However, I find myself becoming less and less excited about it. It's not to say that I hate it. Nobody hates stars, and I'm still happy to see the number grows. Yet, I found something that values more to me: user feedbacks.</p>
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/5"/><category term="2021"/><category term="TODO"/><published>2021-01-07T02:40:01+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/4</id><title>手机写作测试</title><updated>2024-01-19T08:52:00.762743+00:00</updated><content type="html"><![CDATA[<p>这是在手机客户端编写输入的，用手机输入法打字效率有点低，但是语音输入法感觉还行。不过口语无法替代书面语，这一点比较遗憾。</p>
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/4"/><category term="2021"/><published>2021-01-07T02:33:26+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/3</id><title>Stars Don’t Make Me Happy. Feedbacks Do.</title><updated>2024-01-19T08:52:00.847450+00:00</updated><content type="html"><![CDATA[<p>Like many other programmers, I used to get hyped when somebody stars my project on GitHub. However, I find myself becoming less and less excited about it. It's not to say that I hate it. Nobody hates stars, and I'm still happy to see the number grows. Yet, I found something that values more to me: user feedbacks.</p>
 <p>So what are user feedbacks? Almost anything you can think of counts: issues, comments, questions, suggestions, PRs, articles, usage, etc. Feedbacks show that people are actually using your project, and it can help you improve. A negative feedback is way better than no feedback, because it tells you what you should work on next.</p>
 <p>Feedbacks usually comes as a natural result of exposure. More people know it thus more people use it. But sometimes, you got a bunch of stars, yet nobody gives you any feedback. That's the situation Cyberbrain is currently facing, which bothers me a lot. Tian said he has a similar feeling for VizTracer, also xintao for iRedis. Why is it bothering? Because it leaves you in a clueless state, and you keep doubting yourself: am I doing good? Am I doing bad? Why do people seem to be interested but don't really use it? Do I just sit and wait, or should I reach out to some of the people, but whom? What should I work on next, are the planned features what users need the most?</p>
 <p>I don't have an answer, and I hope it's because people are already satisfied or shocked by Cyberbrain. Luckily, I did receive some feedback from my friends, and I want to say thank you to all of you. It matters a lot to me.</p>
 <p>just do it.</p>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/3" rel="alternate"/><category term="2021"/><published>2021-01-05T16:44:17+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/2</id><title>测试发送图片</title><updated>2023-11-20T12:40:44.375531+00:00</updated><content type="html"><![CDATA[<p>没有内容只有一张图。
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/3"/><category term="2021"/><published>2021-01-05T16:44:17+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/2</id><title>测试发送图片</title><updated>2024-01-19T08:52:00.947575+00:00</updated><content type="html"><![CDATA[<p>没有内容只有一张图。
 <img src="https://user-images.githubusercontent.com/8943338/103671319-b805e100-4fb5-11eb-8824-dbe088968b54.jpg" alt="5541db97016ce72bd516a8d4960cc01e" /></p>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/2" rel="alternate"/><category term="2021"/><published>2021-01-05T16:25:53+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/1</id><title>利用github issue和githubpages写博客</title><updated>2023-11-20T12:40:44.483377+00:00</updated><content type="html"><![CDATA[<p>根据<a href="https://github.com/yihong0618/gitblog">yihong</a>的文章指引，测试一下gitaction是否成功。
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/2"/><category term="2021"/><published>2021-01-05T16:25:53+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/1</id><title>利用github issue和githubpages写博客</title><updated>2024-01-19T08:52:01.044885+00:00</updated><content type="html"><![CDATA[<p>根据<a href="https://github.com/yihong0618/gitblog">yihong</a>的文章指引，测试一下gitaction是否成功。
 加入了lifepal/markdown-to-html@v1.2</p>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/1" rel="alternate"/><category term="2021"/><published>2021-01-05T15:19:49+00:00</published></entry></feed>
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/1"/><category term="2021"/><published>2021-01-05T15:19:49+00:00</published></entry></feed>
