@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 <follow_challenge>
     <feedId>60889005729631232</feedId>
     <userId>43574732442434560</userId>
@@ -6,7 +7,18 @@
 <description>
     feedId:60889005729631232+userId:43574732442434560
 </description>
-<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/changjiong/changjiong.github.io</id><title>RSS feed of changjiong's changjiong.github.io</title><updated>2024-03-18T18:41:09.925952+00:00</updated><author><name>GitHub Action</name><email>action@github.com</email></author><link href="https://github.com/changjiong/changjiong.github.io"/><link href="https://raw.githubusercontent.com/changjiong/changjiong.github.io/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator><entry><id>https://github.com/changjiong/changjiong.github.io/issues/12</id><title>我常用的工具</title><updated>2024-03-18T18:41:10.132966+00:00</updated><content type="html"><![CDATA[<p>常用语言：python
+<id>https://github.com/changjiong/changjiong.github.io</id>
+<title>RSS feed of changjiong's changjiong.github.io</title>
+<updated>2024-03-18T18:41:09.925952+00:00</updated>
+<author><name>GitHub Action</name><email>action@github.com</email></author>
+<link href="https://github.com/changjiong/changjiong.github.io"/>
+<link href="https://raw.githubusercontent.com/changjiong/changjiong.github.io/master/feed.xml" rel="self"/>
+<generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
+<entry>
+	<id>https://github.com/changjiong/changjiong.github.io/issues/12</id>
+	<title>我常用的工具</title>
+	<updated>2024-03-18T18:41:10.132966+00:00</updated>
+	<content type="html"><![CDATA[<p>常用语言：python
 代码： VS code、Notepad++
 数据库：navicat
 邮件： Foxmail
@@ -23,7 +35,16 @@
 粘贴板：ditto
 防火墙：火绒
 下载：idm</p>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/12"/><category term="2024"/><published>2024-01-19T08:51:33+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/11</id><title>添加微软clarity支持</title><updated>2024-03-18T18:41:10.212830+00:00</updated><content type="html"><![CDATA[<head>
+]]></content>
+	<link href="https://github.com/changjiong/changjiong.github.io/issues/12"/>
+	<category term="2024"/>
+	<published>2024-01-19T08:51:33+00:00</published>
+</entry>
+<entry>
+	<id>https://github.com/changjiong/changjiong.github.io/issues/11</id>
+	<title>添加微软clarity支持</title>
+	<updated>2024-03-18T18:41:10.212830+00:00</updated>
+	<content type="html"><![CDATA[<head>
 	&lt;script type="text/javascript">
 		(function(c,l,a,r,i,t,y){
 			c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -31,7 +52,13 @@
 			y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 		})(window, document, "clarity", "script", "jtdrkyns3w");
 	</script>
-</head>]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/11"/><category term="2023"/><published>2023-11-20T09:46:07+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/10</id><title>友情链接</title><updated>2024-03-18T18:41:10.296157+00:00</updated><content type="html"><![CDATA[<p>这个 Issue 是友情链接的 Issue, 如果你想加到友情链接里，请在这条 Issue 上评论，我打心后会自动加到友情链接里。感谢大家。</p>
+</head>]]></content>
+	<link href="https://github.com/changjiong/changjiong.github.io/issues/11"/>
+	<category term="2023"/>
+	<published>2023-11-20T09:46:07+00:00</published>
+</entry>
+<entry>
+	<id>https://github.com/changjiong/changjiong.github.io/issues/10</id><title>友情链接</title><updated>2024-03-18T18:41:10.296157+00:00</updated><content type="html"><![CDATA[<p>这个 Issue 是友情链接的 Issue, 如果你想加到友情链接里，请在这条 Issue 上评论，我打心后会自动加到友情链接里。感谢大家。</p>
 <hr />
 <p>格式如下（请参考我下面的 comment）:
 冒号为中文冒号 ：</p>
