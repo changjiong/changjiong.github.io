@@ -1,4 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
+<follow_challenge>
+    <feedId>60889005729631232</feedId>
+    <userId>43574732442434560</userId>
+</follow_challenge>
 <feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/changjiong/changjiong.github.io</id><title>RSS feed of changjiong's changjiong.github.io</title><updated>2024-03-18T18:41:09.925952+00:00</updated><author><name>GitHub Action</name><email>action@github.com</email></author><link href="https://github.com/changjiong/changjiong.github.io"/><link href="https://raw.githubusercontent.com/changjiong/changjiong.github.io/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator><entry><id>https://github.com/changjiong/changjiong.github.io/issues/12</id><title>我常用的工具</title><updated>2024-03-18T18:41:10.132966+00:00</updated><content type="html"><![CDATA[<p>常用语言：python
 代码： VS code、Notepad++
 数据库：navicat
