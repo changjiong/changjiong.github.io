@@ -211,7 +211,6 @@ def add_md_tail(md):
     with open(md, "a+", encoding="utf-8") as md:
         md.write(CSS)
         md.write("\n")
-	md.write(FOOTER)
 
 def add_md_label(repo, md, me):
     labels = get_repo_labels(repo)
