@@ -1,24 +1,76 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-<follow_challenge>
-    <feedId>60889005729631232</feedId>
-    <userId>43574732442434560</userId>
-</follow_challenge>
-<description>
-    feedId:60889005729631232+userId:43574732442434560
-</description>
-<id>https://github.com/changjiong/changjiong.github.io</id>
-<title>RSS feed of changjiong's changjiong.github.io</title>
-<updated>2024-03-18T18:41:09.925952+00:00</updated>
-<author><name>GitHub Action</name><email>action@github.com</email></author>
-<link href="https://github.com/changjiong/changjiong.github.io"/>
-<link href="https://raw.githubusercontent.com/changjiong/changjiong.github.io/master/feed.xml" rel="self"/>
-<generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-<entry>
-	<id>https://github.com/changjiong/changjiong.github.io/issues/12</id>
-	<title>我常用的工具</title>
-	<updated>2024-03-18T18:41:10.132966+00:00</updated>
-	<content type="html"><![CDATA[<p>常用语言：python
+<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/changjiong/changjiong.github.io</id><title>RSS feed of changjiong's changjiong.github.io</title><updated>2026-05-13T02:00:59.342654+00:00</updated><author><name>GitHub Action</name><email>action@github.com</email></author><link href="https://github.com/changjiong/changjiong.github.io"/><link href="https://raw.githubusercontent.com/changjiong/changjiong.github.io/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator><entry><id>https://github.com/changjiong/changjiong.github.io/issues/13</id><title>ubuntu 如何安装代码统计工具tokei 和scc？</title><updated>2026-05-13T02:01:00.008368+00:00</updated><content type="html"><![CDATA[<p>在 Ubuntu 上安装这两款工具非常简单，你可以根据自己的习惯选择通过包管理器直接安装，或者通过 Rust/Go 的环境进行安装。</p>
+<h3>1. 安装 tokei</h3>
+<p><a href="https://github.com/XAMPPRocky/tokei">tokei</a> 官方已经进入了 Ubuntu 的标准仓库（Ubuntu 20.04+），可以直接使用 <code>apt</code>。</p>
+<ul>
+<li><strong>官方仓库安装 (最快)</strong>：</li>
+</ul>
+<pre><code class="language-bash">sudo apt update
+sudo apt install tokei
+
+</code></pre>
+<ul>
+<li><strong>通过 Cargo 安装 (版本最新)</strong>：
+如果你本地有 Rust 开发环境，推荐使用 Cargo，这样能获取到最新特性：</li>
+</ul>
+<pre><code class="language-bash">cargo install tokei
+
+</code></pre>
+<hr />
+<h3>2. 安装 scc</h3>
+<p><a href="https://github.com/boyter/scc">scc</a> 在 Ubuntu 官方仓库中可能不直接提供，通常推荐使用 Snap 或直接下载二进制文件。</p>
+<ul>
+<li><strong>通过 Snap 安装 (最推荐)</strong>：
+Snap 是 Ubuntu 自带的包管理方式，安装非常方便：</li>
+</ul>
+<pre><code class="language-bash">sudo snap install scc
+
+</code></pre>
+<ul>
+<li><strong>通过 Go 安装</strong>：
+如果你安装了 Go 环境，可以使用以下命令：</li>
+</ul>
+<pre><code class="language-bash">go install github.com/boyter/scc/v3@latest
+
+</code></pre>
+<ul>
+<li><strong>手动安装二进制文件</strong>：
+如果你不想安装任何环境，可以去 <a href="https://github.com/boyter/scc/releases">GitHub Releases</a> 下载对应的 <code>.deb</code> 包或压缩包，解压后将二进制文件移动到 <code>/usr/local/bin/</code> 即可。</li>
+</ul>
+<hr />
+<h3>常用指令对比</h3>
+<p>安装完成后，你可以对比一下两者的输出风格：</p>
+<table>
+<thead>
+<tr>
+<th>需求</th>
+<th>tokei 命令</th>
+<th>scc 命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>基础统计</strong></td>
+<td><code>tokei .</code></td>
+<td><code>scc .</code></td>
+</tr>
+<tr>
+<td><strong>按代码量排序</strong></td>
+<td><code>tokei . --sort code</code></td>
+<td><code>scc . --sort code</code></td>
+</tr>
+<tr>
+<td><strong>输出 JSON 格式</strong></td>
+<td><code>tokei . -o json</code></td>
+<td><code>scc . --format json</code></td>
+</tr>
+<tr>
+<td><strong>查看单个文件</strong></td>
+<td><code>tokei . --files</code></td>
+<td><code>scc . --by-file</code></td>
+</tr>
+</tbody></table><p><strong>提示</strong>：如果你是在大型项目中使用，<code>scc</code> 默认会提供更详细的<strong>复杂度 (Complexity)</strong> 和<strong>开发成本估算</strong>信息；而 <code>tokei</code> 的输出则更加简洁明了。</p>
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/13"/><published>2026-05-13T01:53:39+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/12</id><title>我常用的工具</title><updated>2026-05-13T02:01:00.259459+00:00</updated><content type="html"><![CDATA[<p>常用语言：python
 代码： VS code、Notepad++
 数据库：navicat
 邮件： Foxmail
@@ -35,16 +87,7 @@
 粘贴板：ditto
 防火墙：火绒
 下载：idm</p>
-]]></content>
-	<link href="https://github.com/changjiong/changjiong.github.io/issues/12"/>
-	<category term="2024"/>
-	<published>2024-01-19T08:51:33+00:00</published>
-</entry>
-<entry>
-	<id>https://github.com/changjiong/changjiong.github.io/issues/11</id>
-	<title>添加微软clarity支持</title>
-	<updated>2024-03-18T18:41:10.212830+00:00</updated>
-	<content type="html"><![CDATA[<head>
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/12"/><category term="2024"/><published>2024-01-19T08:51:33+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/11</id><title>添加微软clarity支持</title><updated>2026-05-13T02:01:00.492828+00:00</updated><content type="html"><![CDATA[<head>
 	&lt;script type="text/javascript">
 		(function(c,l,a,r,i,t,y){
 			c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -52,13 +95,7 @@
 			y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 		})(window, document, "clarity", "script", "jtdrkyns3w");
 	</script>
-</head>]]></content>
-	<link href="https://github.com/changjiong/changjiong.github.io/issues/11"/>
-	<category term="2023"/>
-	<published>2023-11-20T09:46:07+00:00</published>
-</entry>
-<entry>
-	<id>https://github.com/changjiong/changjiong.github.io/issues/10</id><title>友情链接</title><updated>2024-03-18T18:41:10.296157+00:00</updated><content type="html"><![CDATA[<p>这个 Issue 是友情链接的 Issue, 如果你想加到友情链接里，请在这条 Issue 上评论，我打心后会自动加到友情链接里。感谢大家。</p>
+</head>]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/11"/><category term="2023"/><published>2023-11-20T09:46:07+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/10</id><title>友情链接</title><updated>2026-05-13T02:01:00.727077+00:00</updated><content type="html"><![CDATA[<p>这个 Issue 是友情链接的 Issue, 如果你想加到友情链接里，请在这条 Issue 上评论，我打心后会自动加到友情链接里。感谢大家。</p>
 <hr />
 <p>格式如下（请参考我下面的 comment）:
 冒号为中文冒号 ：</p>
@@ -68,23 +105,23 @@
 <ul>
 <li><input disabled="" type="checkbox"> added all</li>
 </ul>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/10"/><category term="Friends"/><published>2023-07-27T04:46:18+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/9</id><title>科技对人类生活的影响</title><updated>2024-03-18T18:41:10.374928+00:00</updated><content type="html"><![CDATA[<p>暂时不太清楚Mark</p>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/9"/><category term="2021"/><published>2021-09-29T12:01:39+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/8</id><title>things get done</title><updated>2024-03-18T18:41:10.479531+00:00</updated><content type="html"><![CDATA[<p>态度 气度  厚度</p>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/8"/><published>2021-06-11T04:22:28+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/7</id><title>排序展示是依靠label的</title><updated>2024-03-18T18:41:10.562069+00:00</updated><content type="html"><![CDATA[<p>添加了top标签</p>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/7"/><category term="2021"/><category term="Top"/><published>2021-01-07T06:51:02+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/5</id><title>测试一下todo-list</title><updated>2024-03-18T18:41:10.652803+00:00</updated><content type="html"><![CDATA[<ul>
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/10"/><category term="Friends"/><published>2023-07-27T04:46:18+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/9</id><title>科技对人类生活的影响</title><updated>2026-05-13T02:01:01.011382+00:00</updated><content type="html"><![CDATA[<p>暂时不太清楚Mark</p>
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/9"/><category term="2021"/><published>2021-09-29T12:01:39+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/8</id><title>things get done</title><updated>2026-05-13T02:01:01.292102+00:00</updated><content type="html"><![CDATA[<p>态度 气度  厚度</p>
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/8"/><published>2021-06-11T04:22:28+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/7</id><title>排序展示是依靠label的</title><updated>2026-05-13T02:01:01.552839+00:00</updated><content type="html"><![CDATA[<p>添加了top标签</p>
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/7"/><category term="2021"/><category term="Top"/><published>2021-01-07T06:51:02+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/5</id><title>测试一下todo-list</title><updated>2026-05-13T02:01:01.796533+00:00</updated><content type="html"><![CDATA[<ul>
 <li><input checked="" disabled="" type="checkbox"> 买菜</li>
 <li><input checked="" disabled="" type="checkbox"> 洗菜</li>
 <li><input disabled="" type="checkbox"> 做菜</li>
 <li><input disabled="" type="checkbox"> 上菜</li>
 </ul>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/5"/><category term="2021"/><category term="TODO"/><published>2021-01-07T02:40:01+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/4</id><title>手机写作测试</title><updated>2024-03-18T18:41:10.740342+00:00</updated><content type="html"><![CDATA[<p>这是在手机客户端编写输入的，用手机输入法打字效率有点低，但是语音输入法感觉还行。不过口语无法替代书面语，这一点比较遗憾。</p>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/4"/><category term="2021"/><published>2021-01-07T02:33:26+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/3</id><title>Stars Don’t Make Me Happy. Feedbacks Do.</title><updated>2024-03-18T18:41:10.835517+00:00</updated><content type="html"><![CDATA[<p>Like many other programmers, I used to get hyped when somebody stars my project on GitHub. However, I find myself becoming less and less excited about it. It's not to say that I hate it. Nobody hates stars, and I'm still happy to see the number grows. Yet, I found something that values more to me: user feedbacks.</p>
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/5"/><category term="2021"/><category term="TODO"/><published>2021-01-07T02:40:01+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/4</id><title>手机写作测试</title><updated>2026-05-13T02:01:02.060245+00:00</updated><content type="html"><![CDATA[<p>这是在手机客户端编写输入的，用手机输入法打字效率有点低，但是语音输入法感觉还行。不过口语无法替代书面语，这一点比较遗憾。</p>
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/4"/><category term="2021"/><published>2021-01-07T02:33:26+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/3</id><title>Stars Don’t Make Me Happy. Feedbacks Do.</title><updated>2026-05-13T02:01:02.293234+00:00</updated><content type="html"><![CDATA[<p>Like many other programmers, I used to get hyped when somebody stars my project on GitHub. However, I find myself becoming less and less excited about it. It's not to say that I hate it. Nobody hates stars, and I'm still happy to see the number grows. Yet, I found something that values more to me: user feedbacks.</p>
 <p>So what are user feedbacks? Almost anything you can think of counts: issues, comments, questions, suggestions, PRs, articles, usage, etc. Feedbacks show that people are actually using your project, and it can help you improve. A negative feedback is way better than no feedback, because it tells you what you should work on next.</p>
 <p>Feedbacks usually comes as a natural result of exposure. More people know it thus more people use it. But sometimes, you got a bunch of stars, yet nobody gives you any feedback. That's the situation Cyberbrain is currently facing, which bothers me a lot. Tian said he has a similar feeling for VizTracer, also xintao for iRedis. Why is it bothering? Because it leaves you in a clueless state, and you keep doubting yourself: am I doing good? Am I doing bad? Why do people seem to be interested but don't really use it? Do I just sit and wait, or should I reach out to some of the people, but whom? What should I work on next, are the planned features what users need the most?</p>
 <p>I don't have an answer, and I hope it's because people are already satisfied or shocked by Cyberbrain. Luckily, I did receive some feedback from my friends, and I want to say thank you to all of you. It matters a lot to me.</p>
 <p>just do it.</p>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/3"/><category term="2021"/><published>2021-01-05T16:44:17+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/2</id><title>测试发送图片</title><updated>2024-03-18T18:41:10.937402+00:00</updated><content type="html"><![CDATA[<p>没有内容只有一张图。
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/3"/><category term="2021"/><published>2021-01-05T16:44:17+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/2</id><title>测试发送图片</title><updated>2026-05-13T02:01:02.519102+00:00</updated><content type="html"><![CDATA[<p>没有内容只有一张图。
 <img src="https://user-images.githubusercontent.com/8943338/103671319-b805e100-4fb5-11eb-8824-dbe088968b54.jpg" alt="5541db97016ce72bd516a8d4960cc01e" /></p>
-]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/2"/><category term="2021"/><published>2021-01-05T16:25:53+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/1</id><title>利用github issue和githubpages写博客</title><updated>2024-03-18T18:41:11.011034+00:00</updated><content type="html"><![CDATA[<p>根据<a href="https://github.com/yihong0618/gitblog">yihong</a>的文章指引，测试一下gitaction是否成功。
+]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/2"/><category term="2021"/><published>2021-01-05T16:25:53+00:00</published></entry><entry><id>https://github.com/changjiong/changjiong.github.io/issues/1</id><title>利用github issue和githubpages写博客</title><updated>2026-05-13T02:01:02.762620+00:00</updated><content type="html"><![CDATA[<p>根据<a href="https://github.com/yihong0618/gitblog">yihong</a>的文章指引，测试一下gitaction是否成功。
 加入了lifepal/markdown-to-html@v1.2</p>
 ]]></content><link href="https://github.com/changjiong/changjiong.github.io/issues/1"/><category term="2021"/><published>2021-01-05T15:19:49+00:00</published></entry></feed>

@@ -7,15 +7,6 @@
 			y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 		})(window, document, "clarity", "script", "jtdrkyns3w");
 	</script>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YDV0S1VGZS"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
-	  gtag('config', 'G-YDV0S1VGZS');
-	</script>
 </head>
 
 ## Gitblog
@@ -37,13 +28,12 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 - [排序展示是依靠label的](https://github.com/changjiong/changjiong.github.io/issues/7)--2021-01-07
 
 ## 最近更新
+- [ubuntu 如何安装代码统计工具tokei 和scc？](https://github.com/changjiong/changjiong.github.io/issues/13)--2026-05-13
 - [我常用的工具](https://github.com/changjiong/changjiong.github.io/issues/12)--2024-01-19
 - [添加微软clarity支持](https://github.com/changjiong/changjiong.github.io/issues/11)--2023-11-20
 - [友情链接](https://github.com/changjiong/changjiong.github.io/issues/10)--2023-07-27
 - [科技对人类生活的影响](https://github.com/changjiong/changjiong.github.io/issues/9)--2021-09-29
-- [things get done](https://github.com/changjiong/changjiong.github.io/issues/8)--2021-06-11
 
-## 2021
 - [科技对人类生活的影响](https://github.com/changjiong/changjiong.github.io/issues/9)--2021-09-29
 - [排序展示是依靠label的](https://github.com/changjiong/changjiong.github.io/issues/7)--2021-01-07
 - [测试一下todo-list](https://github.com/changjiong/changjiong.github.io/issues/5)--2021-01-07
@@ -68,6 +58,3 @@ TODO list from [测试一下todo-list](https://github.com/changjiong/changjiong.
 - [ ] 上菜
 
 <link rel="stylesheet" href="./style.css" />
-
-
-<a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2024093360号-1</a>
